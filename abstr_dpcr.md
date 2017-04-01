@@ -1,7 +1,7 @@
 ---
 title: "Integrated analysis of digital PCR experiments in R"
 author: |
-  |  Michał Burdukiewicz^1^, Jim Huggett^2^, Alexandra Whale^2^, Piotr Sobczyk^3^, Paweł Mackiewicz^1^, Andrej-Nikolai Spiessk^4^, Peter Schierack^5^ and Stefan Reodiger^5^
+  |  Michał Burdukiewicz^1^, Jim Huggett^2^, Alexandra Whale^2^, Piotr Sobczyk^3^, Paweł Mackiewicz^1^, Andrej-Nikolai Spiess^4^, Peter Schierack^5^ and Stefan Rödiger^5^
   |
   | 1. University of Wrocław, Department of Genomics
   | 2. LGC, Molecular and Cell Biology Team
