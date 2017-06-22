@@ -1,0 +1,25 @@
+\begin{thebibliography}{}
+
+\bibitem[Família et~al., 2015]{familia_prediction_2015}
+Família, C., Dennison, S.~R., Quintas, A., and Phoenix, D.~A. (2015).
+\newblock Prediction of {Peptide} and {Protein} {Propensity} for {Amyloid}
+  {Formation}.
+\newblock {\em PLOS ONE}, 10(8):e0134679.
+
+\bibitem[Garbuzynskiy et~al., 2010]{garbuzynskiy_foldamyloid:_2010}
+Garbuzynskiy, S.~O., Lobanov, M.~Y., and Galzitskaya, O.~V. (2010).
+\newblock {FoldAmyloid}: a method of prediction of amyloidogenic regions from
+  protein sequence.
+\newblock {\em Bioinformatics (Oxford, England)}, 26(3):326--332.
+
+\bibitem[Paz and Serrano, 2004]{paz_sequence_2004}
+Paz, M. L. d.~l. and Serrano, L. (2004).
+\newblock Sequence determinants of amyloid fibril formation.
+\newblock {\em Proceedings of the National Academy of Sciences}, 101(1):87--92.
+
+\bibitem[Walsh et~al., 2014]{walsh_pasta_2014}
+Walsh, I., Seno, F., Tosatto, S. C.~E., and Trovato, A. (2014).
+\newblock {PASTA} 2.0: an improved server for protein aggregation prediction.
+\newblock {\em Nucleic Acids Research}, page gku399.
+
+\end{thebibliography}
