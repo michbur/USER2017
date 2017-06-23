@@ -1,0 +1,28 @@
+\begin{thebibliography}{}
+
+\bibitem[Hiller et~al., 2004]{hiller_predisi:_2004}
+Hiller, K., Grote, A., Scheer, M., Münch, R., and Jahn, D. (2004).
+\newblock {PrediSi}: prediction of signal peptides and their cleavage
+  positions.
+\newblock {\em Nucleic Acids Research}, 32(suppl 2):W375–W379.
+
+\bibitem[Käll et~al., 2004]{kall_combined_2004}
+Käll, L., Krogh, A., and Sonnhammer, E. L.~L. (2004).
+\newblock A combined transmembrane topology and signal peptide prediction
+  method.
+\newblock {\em Journal of Molecular Biology}, 338(5):1027–1036.
+
+\bibitem[Petersen et~al., 2011]{petersen_signalp_2011}
+Petersen, T.~N., Brunak, S., von Heijne, G., and Nielsen, H. (2011).
+\newblock {SignalP} 4.0: discriminating signal peptides from transmembrane
+  regions.
+\newblock {\em Nature Methods}, 8(10):785–786.
+
+\bibitem[Reynolds et~al., 2008]{reynolds_transmembrane_2008}
+Reynolds, S.~M., Käll, L., Riffle, M.~E., Bilmes, J.~A., and Noble, W.~S.
+  (2008).
+\newblock Transmembrane topology and signal peptide prediction using dynamic
+  bayesian networks.
+\newblock {\em {PLoS} Computational Biology}, 4(11):e1000213.
+
+\end{thebibliography}
