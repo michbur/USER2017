@@ -207,7 +207,7 @@ analyzed encodings in most categories.
 
 
 \begin{block}{Informative n-grams}
-<<echo = FALSE,message=FALSE,fig.align='center',fig.width=14,fig.height=9,warning=FALSE>>=
+<<echo = FALSE,message=FALSE,fig.align='center',fig.width=14,fig.height=8.9,warning=FALSE>>=
 ngram_freq <- read.csv("ngram_freq.csv")
 
 gr_aa <- encoding2df(AmyloGram::AmyloGram_model[["enc"]]) %>% 
@@ -233,7 +233,7 @@ ggplot(ngram_freq_plot, aes(x = decoded_name, y = value)) +
   geom_bar(aes(fill = variable), position = "dodge", stat = "identity") +
   geom_point(data = group_by(ngram_freq_plot, decoded_name)  %>% filter(value == max(value)),
              aes(y = value + 0.004, shape = association), size = 6) +
-  scale_fill_manual("", values = c("gold", "darkmagenta")) +
+  scale_fill_manual("", values = c("#d17312", "#04d1b2")) +
   scale_shape_manual("Motif:", breaks = c("Amyloidogenic", "Non-amyloidogenic"), values = c(16, 17, NA)) +
   scale_y_continuous("Frequency") +
   scale_x_discrete("") +
@@ -282,7 +282,7 @@ The predictor based on the best-performing alphabet, called AmyloGram, was bench
 
 Using AmyloGram we analyzed all peptides from AmyLoad database. Eight peptides, described in the database as non-amyloids and assesed by AmyloGram with the highest probability of amyloidogenicity, were validated experimentally using Fourier transform infrared spectroscopy.
 
-<<echo = FALSE,message=FALSE,fig.align='center',fig.width=14,fig.height=6,warning=FALSE>>=
+<<echo = FALSE,message=FALSE,fig.align='center',fig.width=14,fig.height=5.9,warning=FALSE>>=
 ftir_res <- read.csv("ftir_amylogram_pasta2_literature.csv")
 
 ftir_res_agg <- ftir_res %>% 
@@ -297,18 +297,18 @@ ftir_res_agg <- ftir_res %>%
   rbind(data.frame(amyl_db = "Non-amyloid", amyl_ftir = "Amyloid", count = 3)) %>% 
   mutate(frac = count/sum(count),
          count_nice = ifelse(count > 2, paste0(count, " peptides"), paste0(count, " peptide")),
-         amyl_db = factor(c("no data", 
-                            "no data", 
-                            "amyloid")))
+         amyl_db = factor(c("No data", 
+                            "No data", 
+                            "Amyloid")))
 
 ggplot(ftir_res_agg, aes(x = amyl_ftir, y = frac, fill = amyl_db,
                          label = count_nice)) +
   geom_bar(stat = "identity") +
-  geom_text(position = position_stack(vjust=0.5), color = "white", size = 8) +
+  geom_text(position = position_stack(vjust=0.5), color = "black", size = 8) +
   scale_y_continuous("Fraction of peptides") +
   scale_x_discrete("FTIR result") +
-  scale_fill_manual("Literature data", values = c("darkred", "navyblue"),
-                    na.value = "gray47") +
+  scale_fill_manual("Literature data", values = c("#d17312", "lightgrey"),
+                    na.value = "lightgrey") +
   my_theme
 @
 
@@ -328,6 +328,8 @@ of amyloidogenic sequences called AmyloGram.
 Our software is avaible as a web-server: \url{www.smorfland.uni.wroc.pl/shiny/AmyloGram/} and \textbf{R} package: \url{https://cran.r-project.org/package=AmyloGram}.
 
 \bigskip
+
+Find us online: \url{https://github.com/michbur/USER2017}.
 
 \small{This research was partially funded by the KNOW Consortium and National Science Center (2015/17/N/NZ2/01845).}
 
